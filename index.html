@@ -4,46 +4,69 @@
 <head>
     <meta charset="UTF-8">
     <title>Резюме | Ivan Fedak</title>
+
+    <style>
+        body {
+            background-color: #f4f7f6;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+    </style>
+
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-    <header>
+    <header id="main-header" style="text-align: center; margin-bottom: 30px;">
         <h1>Ivan Fedak</h1>
         <p><strong>Поточна роль:</strong> Cybersecurity Intern (UnderDefense)</p>
     </header>
 
-    <main>
-        <section>
-            <h2>Про себе</h2>
-            <p>Захоплююся кібербезпекою та системним адмініструванням. Практикую <strong>стоїцизм</strong>, що допомагає
-                зберігати холодний розум та приймати зважені рішення в критичних ситуаціях. Маю лідерські якості та
-                досвід командної роботи.</p>
+    <main class="cv-container">
+
+        <section class="cv-section">
+            <h2 class="section-title">Про себе</h2>
+            <p>Активно цікавлюся <strong>кібербезпекою</strong>, цікавлюсь <strong>Bug Bounty</strong>, та
+                системним адмініструванням. Практикую стоїцизм для збереження "холодного розуму" в критичних ситуаціях.
+                Маю лідерські якості та досвід командної роботи.</p>
         </section>
 
-        <section>
-            <h2>Досвід (Стажування)</h2>
-            <ul>
+        <section class="cv-section">
+            <h2 class="section-title">Досвід (Стажування)</h2>
+            <ul class="experience-list">
                 <li>
                     <strong>Internship at UnderDefense</strong>
-                    <p>Адміністрування <strong>Ubuntu Linux</strong> у віртуальних середовищах, робота з налаштуваннями
-                        безпеки.</p>
+                    <p>Практична робота з адміністрування та налаштування безпеки <strong>Ubuntu Linux</strong> у
+                        віртуальних середовищах (VirtualBox).</p>
                 </li>
             </ul>
         </section>
 
-        <section>
-            <h2>Технічні навички</h2>
-            <ul>
-                <li><strong>Програмування:</strong> Python (активне вивчення), C# (основи)</li>
-                <li><strong>Робота з даними:</strong> MySQL</li>
-                <li><strong>Мережі:</strong> Моделювання та конфігурація у Cisco Packet Tracer</li>
-                <li><strong>Інструменти:</strong> VS Code, Git, VirtualBox</li>
-            </ul>
+        <section class="cv-section">
+            <h2 class="section-title">Технічні навички</h2>
+            <div class="skills-grid">
+                <div class="skill-card" style="background: #e95420; flex-grow: 2;">Адміністрування Linux (Ubuntu)</div>
+
+                <div class="skill-card" data-skill="code">Python, C#</div>
+                <div class="skill-card" data-skill="network">Cisco Packet Tracer</div>
+                <div class="skill-card" data-skill="db">MySQL</div>
+                <div class="skill-card" data-skill="tools">VS Code, Git, VirtualBox</div>
+            </div>
         </section>
 
-        <section>
-            <h2>Особисті якості (Soft Skills)</h2>
+        <section class="cv-section">
+            <h2 class="section-title">Особисті якості</h2>
             <p>Аналітичне мислення, лідерство, дисципліна та здатність до швидкого навчання.</p>
         </section>
     </main>
+
+    <footer id="main-footer">
+        <hr>
+        <p>© 2026 Ivan Fedak</p>
+    </footer>
+
+</body>
+
+</html>
