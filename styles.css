@@ -1,0 +1,95 @@
+/* =========================================
+   БЛОКОВА МОДЕЛЬ (Box Model) ТА СЕЛЕКТОРИ
+   ========================================= */
+
+/* 1. Селектор класу (.cv-container) */
+.cv-container {
+    max-width: 800px;
+    /* Обмежуємо ширину резюме */
+    margin: 0 auto;
+    /* Центруємо блок по горизонталі */
+    background: #ffffff;
+    padding: 30px;
+    /* Внутрішній відступ (Box Model) */
+    border-radius: 10px;
+    /* Закруглені кути */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    /* Легка тінь */
+}
+
+/* 2. Селектор тегу (h1) */
+h1 {
+    color: #2c3e50;
+    margin-bottom: 5px;
+    font-size: 2.5rem;
+}
+
+/* 3. Селектор ідентифікатора (#main-footer) */
+#main-footer {
+    text-align: center;
+    color: #7f8c8d;
+    margin-top: 40px;
+    font-size: 0.9rem;
+}
+
+/* Налаштування секцій */
+.cv-section {
+    margin-bottom: 25px;
+    /* Зовнішній відступ (Box Model) */
+    border-left: 4px solid #3498db;
+    /* Синя лінія зліва */
+    padding-left: 15px;
+}
+
+.section-title {
+    color: #2980b9;
+    border-bottom: 2px solid #ecf0f1;
+    padding-bottom: 5px;
+}
+
+/* 4. Псевдоклас (:hover) - ефект при наведенні мишки */
+.cv-section:hover {
+    background-color: #fbfbfc;
+    /* Ледь помітна зміна фону */
+    transition: background-color 0.3s ease;
+}
+
+/* =========================================
+   FLEXBOX (Гнучкий макет для навичок)
+   ========================================= */
+
+/* Робимо контейнер навичок гнучким */
+.skills-grid {
+    display: flex;
+    /* Вмикаємо Flexbox */
+    flex-wrap: wrap;
+    /* Дозволяємо переносити елементи на новий рядок */
+    gap: 15px;
+    /* Відстань між картками навичок */
+    margin-top: 15px;
+}
+
+/* Стиль окремої картки навички */
+.skill-card {
+    background: #34495e;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    flex-grow: 1;
+    /* Дозволяємо карткам розтягуватися */
+    text-align: center;
+}
+
+/* 5. Селектор атрибута ([data-skill="..."]) */
+/* Виділяємо навички з мережами окремим кольором */
+[data-skill="network"] {
+    background: #e74c3c;
+    /* Червоний колір для Cisco */
+}
+
+[data-skill="code"] {
+    background: #27ae60;
+    /* Зелений колір для програмування */
+}
