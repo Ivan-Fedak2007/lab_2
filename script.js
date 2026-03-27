@@ -80,7 +80,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const modal = document.getElementById("feedback-modal");
     const closeBtn = document.querySelector(".close-btn");
     
-    // Автоматично підставляємо твоє посилання Formspree у форму
+    // Автоматично підставляємо посилання Formspree у форму
     document.getElementById("feedback-form").action = "https://formspree.io/f/xgolgzby";
 
 

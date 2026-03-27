@@ -1,6 +1,8 @@
 /* =========================================
-   БАЗОВИЙ МАКЕТ ТА ПРОФІЛЬ (Лаба 3)
+    БАЗОВИЙ МАКЕТ ТА ПРОФІЛЬ (Лаба 3)
    ========================================= */
+
+/* Головна біла картка-контейнер, в якій лежить все резюме */
 .cv-container {
     max-width: 800px;
     margin: 40px auto;
@@ -10,6 +12,7 @@
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
+/* Блок шапки профілю (вирівнювання фото та тексту в один рядок) */
 .profile-header {
     display: flex;
     align-items: center;
@@ -19,6 +22,7 @@
     padding-bottom: 20px;
 }
 
+/* Оформлення фотографії (розмір, форма кола та тінь) */
 .profile-pic {
     width: 120px;
     height: 120px;
@@ -27,12 +31,14 @@
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
+/* Стилі для імені (головний заголовок) */
 .profile-info h1 {
     margin: 0 0 5px 0;
     color: #2c3e50;
     font-size: 2.8rem;
 }
 
+/* Стилі для підпису посади (Cybersecurity Intern) */
 .role-title {
     font-size: 1.2rem;
     color: #34495e;
@@ -41,6 +47,8 @@
 }
 
 /* СЕКЦІЇ ТА НАВИЧКИ */
+
+/* Налаштування окремих розділів резюме (відступи та прозора лінія зліва) */
 .cv-section {
     margin-bottom: 30px;
     padding-left: 15px;
@@ -48,23 +56,27 @@
     transition: all 0.3s ease;
 }
 
+/* Ефект підсвічування розділу при наведенні мишки */
 .cv-section:hover {
     border-left: 4px solid #3498db;
     background-color: #f8f9fa;
     border-radius: 0 8px 8px 0;
 }
 
+/* Колір та відступ заголовків розділів (Про себе, Досвід тощо) */
 .section-title {
     color: #2980b9;
     margin-bottom: 15px;
 }
 
+/* Контейнер для навичок (гнучка сітка Flexbox) */
 .skills-grid {
     display: flex;
     flex-wrap: wrap;
     gap: 12px;
 }
 
+/* Стилізація карток-кнопок для кожної навички */
 .skill-card {
     background: #34495e;
     color: white;
@@ -75,10 +87,12 @@
     text-align: center;
 }
 
+/* Окремі кольори для категорій навичок (Програмування, Мережі, Бази даних) */
 [data-skill="code"] { background: #27ae60; }
 [data-skill="network"] { background: #e74c3c; }
 [data-skill="db"] { background: #8e44ad; }
 
+/* Нижня частина сторінки (футер з копірайтом) */
 #main-footer {
     text-align: center;
     margin-top: 40px;
